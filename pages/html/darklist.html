@@ -197,7 +197,7 @@
 <h1>Try using goanimate wrapper orignal to see how its like there!</h1><br>
 <p>goanimate wrapper orignal is the verison where it can't be taken down by anyone or more! <a href="https://goanimatewrappercameback.herokuapp.com" target="_blank" style="color:hotpink;text-decoration: none;font-weight:bolder;">README</a></p>
 <p>Before you see this bot called "Vyond Team (g!help)" will help you to patch or unpatch any websites.</p>
-<iframe src="http://78.63.40.199:3005" width="800" height="600" id="uploadfile">Upload File</iframe>
+<iframe src="https://goanimate.herokuapp.com" width="800" height="600" id="uploadfile">Upload File</iframe>
 <iframe src="https://goanimatewrappercameback.herokuapp.com" width="1024" height="768" id="bonziworld">BonziWORLD</iframe>
 </center>
 <center>
@@ -269,8 +269,8 @@
 			const tbl = json[c];
 			const date = tbl.date.substr(0, 10) + ' ' + tbl.date.substr(11);
 			tbody.insertAdjacentHTML('beforeend',
-				'<tr><td><img src="/movie_thumbs/' + tbl.id + '"></td><td><div>' + tbl.title + '</div><div>' + tbl.durationString + '</div></div></td><td><span>' + date.match(/./g).join('</span><span>') + '</span></td><td><a title="Play [' + tbl.title +']" href="javascript:;" onclick="popup(\'' + tbl.id + '\')"></a><a title="Edit ' + tbl.title + '" href="/go_full?movieId=' + tbl.id + '"></a><a title="Download ' + tbl.title + ' as .xml" href="/movies/' + tbl.id + '.xml" download="' + tbl.title + '.xml"></a><a title="Download ' + tbl.title + ' as .png" href="/movie_thumbs/' + tbl.id + '" target="_blank" download="' + tbl.title + '.png"></a><a title="Share a link from ID ' + tbl.id + '" style="cursor: pointer;" href="#basedlink2" onclick="document.getElementById(`basedlink`).style.display=`block`;document.getElementById(`basedlink2`).style.display=`block`;document.getElementById(`basedlink`).value = `Hey guys! I shared link to a video from Wrapper Online: http://78.63.40.199:700/player?movieId=' + tbl.id + '`"></a><a title="Download ' + tbl.title + ' as HyperText Markup Language" href="data:text/html,<html><head><title>Wrapper Online url' + tbl.id + '</title></head><style>body { text-align: center; background: black; color: white; font-family: Arial, Roboto, sans-serif; } iframe { border; 1px inset black; }</style><body><h1>' + tbl.title + '</h1><br><iframe src=http://78.63.40.199:700/player?movieId=' + tbl.id + ' width=1024 height=768>Element Unavailable</iframe><hr><p>However, I use Wrapper Online to make Comedy World animations, you can <a href=http://78.63.40.199:700 target=_blank>get it</a> here.</p></body></html>" target="_blank" download="player_' + tbl.title.toLowerCase() + '.html"></a></td></tr>');
-		}
+				
+		 }			 
 	}
 
 	loadMore.onclick = loadRows;
